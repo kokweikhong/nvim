@@ -113,10 +113,6 @@ for _, plugin in pairs(disabled_built_ins) do
   vim.g["loaded_" .. plugin] = 1
 end
 
-vim.g.netrw_keepdir = 0
-vim.g.netrw_winsize = 30
-vim.g.netrw_banner = 0
--- vim.api.nvim_set_keymap("n", "<F2>", ":Lexplore<CR>", { noremap = true, silent = true })
 
 
 vim.api.nvim_create_autocmd({ "BufWritePre" }, {
