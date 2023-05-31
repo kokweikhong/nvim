@@ -12,6 +12,7 @@ n_keymap('<Leader>fq', "quickfix")
 n_keymap('<Leader>fk', "keymaps")
 n_keymap('<Leader>fe', "diagnostics")
 n_keymap('<Leader>fd', "lsp_definitions")
+n_keymap('<Leader>fv', "current_buffer_fuzzy_find")
 return {
 
   {
