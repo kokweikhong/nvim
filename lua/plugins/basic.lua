@@ -31,4 +31,12 @@ return {
 
   -- "gc" to comment visual regions/lines
   { 'numToStr/Comment.nvim', opts = {} },
+  {
+    'akinsho/toggleterm.nvim',
+    version = "*",
+    opts = { --[[ things you want to change go here]] },
+    keys = {
+      { "<leader>tt", "<cmd>ToggleTerm direction=float<cr>", desc = "Toggle Float Term" },
+    },
+  },
 }
