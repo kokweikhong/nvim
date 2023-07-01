@@ -116,7 +116,7 @@ end
 -- fold method, za to toggle
 vim.opt.fillchars:append({ fold = " " })
 vim.opt.foldmethod = "indent"
-vim.opt.foldenable = false 
+vim.opt.foldenable = false
 vim.opt.foldlevel = 99
 vim.g.markdown_folding = 1 -- enable markdown folding
 
@@ -200,6 +200,9 @@ vim.cmd [[
   augroup END
 ]]
 
+if vim.g.vscode then
+  vim.cmd.colorscheme = ""
+else
 -- Install package manager
 --    https://github.com/folke/lazy.nvim
 --    `:help lazy.nvim.txt` for more info
@@ -234,3 +237,5 @@ require("lazy").setup("plugins", {
     },
   },
 })
+end
+
